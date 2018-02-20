@@ -1,10 +1,11 @@
- <?="Vul hier je gegevens in"?>
+ <?="Add personal details"?>
 <fieldset>
 <form action="<?=URL?>calender/save" method="post">
-    <input required type="text" name="person" placeholder="Name">
+   <label for="Name">Name:</label> <input required type="text" name="person" placeholder="Name">
     <br>
-    <input required type="number" name="day" min="1" max="31" placeholder="day">
-    <input required type="number" name="month" min="1" max="12" placeholder="month">
+    <label for="Date"> Date:</label>
+    <input required type="number" name="day" min="1" max="31" placeholder="day"><?= "-" ?>
+    <input required type="number" name="month" min="1" max="12" placeholder="month"><?= "-" ?>
     <input required type="number" name="year" min="1900" max="2018" placeholder="year">
     <br>
     <input type="submit" name="submit" value="Register">
