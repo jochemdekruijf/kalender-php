@@ -22,9 +22,6 @@ function deleteBirthday($id){
 
 function getBirthdateById($id) 
 {
-
-    echo "received in model:<br>";
-    echo($id . '<br>');
     $db = openDatabaseConnection();
 
     $sql = "SELECT * FROM birthdays where id = :id ";

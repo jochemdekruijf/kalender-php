@@ -98,12 +98,19 @@ p:last-of-type a {  /* the add link */
 form p {
     margin: 5px 0;
 } 
+input{
+  width: 70px;
+  height: 20px;
+  margin: 5px;
+}
 
 form label {
     display: inline-block;
     width: 100px;
 }
 
-form input[type=submit]:only-child {
-    margin-left: 100px;     /* place submit button underneath fields */
+form input[type=submit] {
+         /* place submit button underneath fields */
+    width: 70px;
+    height: 25px;
 }
